@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/python3
 
 # Software License Agreement (BSD License)
 #
@@ -151,7 +151,7 @@ class ReachRsDriver(object):
                 pass
         
     def parse_data(self, data):
-        data = data.strip().split()
+        data = data.decode('UTF-8').strip().split()
         
         for sentence in data:
             if 'GGA' in sentence or 'RMC' in sentence:

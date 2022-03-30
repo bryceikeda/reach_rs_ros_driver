@@ -1,0 +1,7 @@
+<launch>
+	<!-- IP Address and Port number of the reach -->
+	<param name="~reach_rs_host_or_ip" value="192.168.0.104"/>
+	<param name="~reach_rs_port" value="9001"/>
+
+	<node name="reach_rs_driver_node" pkg="reach_rs_driver" type="reach_rs_driver_node.py"/>
+</launch>
